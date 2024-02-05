@@ -203,10 +203,6 @@ body {
 .btn::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: conic-gradient(var(--yellow) 0%, var(--whiteCC) 8%, var(--whiteCC) 25%, var(--yellow) 45%, var(--whiteCC) 60%, var(--whiteCC) 70%, var(--yellow) 100%);
   -webkit-animation: keyframe-btn 3s linear infinite;
           animation: keyframe-btn 3s linear infinite;
@@ -224,15 +220,15 @@ body {
 
 @-webkit-keyframes keyframe-btn {
   to {
-    -webkit-filter: hue-rotate(1turn);
-            filter: hue-rotate(1turn);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes keyframe-btn {
   to {
-    -webkit-filter: hue-rotate(1turn);
-            filter: hue-rotate(1turn);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -302,6 +298,13 @@ body {
 
 .header__btn span {
   padding: 0.96875rem 1.125rem;
+}
+
+.header__btn::before {
+  top: -161%;
+  left: -3%;
+  width: 106%;
+  height: 437%;
 }
 
 .menu {
@@ -498,6 +501,13 @@ body {
   padding: 1rem 1.4375rem;
 }
 
+.main__btn::before {
+  top: -145%;
+  left: -3%;
+  width: 106%;
+  height: 405%;
+}
+
 .choose {
   padding: 192px 0px 167px;
 }
@@ -568,6 +578,43 @@ body {
   height: 2px;
   background: -webkit-gradient(linear, left top, right top, from(var(--yellow)), color-stop(var(--mainColor)), to(transparent));
   background: linear-gradient(to right, var(--yellow), var(--mainColor), transparent);
+}
+
+.choose__body {
+  margin-left: 85px;
+  max-width: 643px;
+}
+
+.choose__body:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.choose__subtitle {
+  position: relative;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.choose__subtitle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  left: -86px;
+  width: 56px;
+  height: 56px;
+  background-image: url("/img/icons/choose/check.svg");
+}
+
+.choose__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 127%;
+  color: #fff;
 }
 
 @media (min-width: 61.99875em) {
