@@ -758,6 +758,78 @@ body {
   gap: 11px;
 }
 
+.lesson__container {
+  margin-top: 137px;
+  padding-bottom: 125px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: auto auto, cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  min-height: 660px;
+}
+
+.lesson__container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, var(--mainColor)), to(transparent));
+  background: linear-gradient(to right, transparent 0%, var(--mainColor) 50%, transparent 100%);
+}
+
+.lesson__root {
+  max-width: 756px;
+}
+
+.lesson__title {
+  font-size: 74px;
+  margin-bottom: 20px;
+}
+
+.lesson__text {
+  line-height: 127%;
+}
+
+.lesson__text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.lesson__text p:last-child {
+  margin-bottom: 50px;
+}
+
+.lesson__btn {
+  padding: 19px 38px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--black);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--yellow)), to(var(--gold)));
+  background: linear-gradient(180deg, var(--yellow) 0%, var(--gold) 100%);
+  border-radius: 6px;
+}
+
+.lesson__btn:hover {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+      transform: translateY(-2px);
+}
+
+.lesson__btn:active {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+      transform: translateY(2px);
+}
+
 @media (min-width: 61.99875em) {
   .menu__item-logo {
     display: none;
