@@ -416,9 +416,6 @@ body {
   background: linear-gradient(to right, transparent 0%, var(--mainColor) 50%, transparent 100%);
 }
 
-.no-webp .main__container::before{
-  background-image: url("/img/mainpage/main/bg.png"); }
-
 .main__container::before {
   content: "";
   position: absolute;
@@ -427,6 +424,7 @@ body {
   width: 1001px;
   height: 1029px;
   z-index: -1;
+  background-image: url("/img/mainpage/main/bg.png");
 }
 
 .main__root {
@@ -556,13 +554,11 @@ body {
   background-position: 50% 50%;
 }
 
-.no-webp .choose__root-1::before, .no-webp .choose__root-1::after{
-  background-image: url("../img/mainpage/choose/dots.png"); }
-
 .choose__root-1::before,
 .choose__root-1::after {
   content: "";
   position: absolute;
+  background-image: url("../img/mainpage/choose/dots.png");
   background-repeat: no-repeat;
   width: 143px;
   height: 143px;
@@ -882,7 +878,3 @@ body {
     }
 }
 }
-
-.webp .main__container::before{ background-image: url(/img/mainpage/main/bg.webp); }
-
-.webp .choose__root-1::before, .webp .choose__root-1::after{ background-image: url(../img/mainpage/choose/dots.webp); }
