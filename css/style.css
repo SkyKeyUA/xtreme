@@ -848,14 +848,12 @@ body {
   background: linear-gradient(to right, var(--yellow), var(--mainColor), transparent);
 }
 
-.coach__swiper {
-  height: 834px;
-  padding: 0px 110px;
+.coach__container {
   position: relative;
 }
 
-.coach__swiper::before,
-.coach__swiper::after {
+.coach__container::before,
+.coach__container::after {
   content: "";
   position: absolute;
   background-image: url("../img/mainpage/choose/dots.png");
@@ -865,12 +863,12 @@ body {
   z-index: -1;
 }
 
-.coach__swiper::before {
+.coach__container::before {
   top: 0;
   left: 123px;
 }
 
-.coach__swiper::after {
+.coach__container::after {
   right: 123px;
   bottom: 170px;
 }
@@ -908,6 +906,9 @@ body {
 
 .coach__slider {
   position: relative;
+  max-width: 1326px;
+  margin: 0 auto;
+  height: 668px;
 }
 
 .coach__slide {
@@ -1023,6 +1024,9 @@ body {
   z-index: 2;
   width: 526px !important;
   height: 667px !important;
+  -webkit-transform: translateX(-71px);
+      -ms-transform: translateX(-71px);
+          transform: translateX(-71px);
 }
 
 .swiper-slide-active .coach__more {
@@ -1049,24 +1053,21 @@ body {
 }
 
 .swiper-slide-prev {
-  -webkit-transform: translateX(22px);
-      -ms-transform: translateX(22px);
-          transform: translateX(22px);
+  -webkit-transform: translateX(-3px);
+      -ms-transform: translateX(-3px);
+          transform: translateX(-3px);
 }
 
 .swiper-slide-next {
-  -webkit-transform: translateX(-22px);
-      -ms-transform: translateX(-22px);
-          transform: translateX(-22px);
+  -webkit-transform: translateX(-104px);
+      -ms-transform: translateX(-104px);
+          transform: translateX(-104px);
 }
 
 .swiper-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .swiper {
