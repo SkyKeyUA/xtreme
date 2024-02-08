@@ -3488,11 +3488,10 @@
             loopedSlides: 1,
             speed: 800,
             coverflowEffect: {
-                rotate: 50,
+                rotate: 0,
                 stretch: 0,
                 depth: 100,
-                modifier: 1,
-                slideShadows: true
+                modifier: 2.5
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -3510,7 +3509,8 @@
                     slidesPerView: 2
                 },
                 992: {
-                    slidesPerView: 3
+                    slidesPerView: 3,
+                    spaceBetween: 30
                 }
             },
             on: {}
