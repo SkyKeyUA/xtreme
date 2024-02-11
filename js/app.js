@@ -3484,7 +3484,7 @@
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
-            initialSlide: 1,
+            initialSlide: 4,
             loopedSlides: 1,
             speed: 800,
             coverflowEffect: {
