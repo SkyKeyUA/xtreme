@@ -3729,43 +3729,85 @@
         });
     }
     function initSliders() {
-        if (document.querySelector(".swiper")) new swiper_core_Swiper(".coach__slider", {
-            modules: [ Navigation, Pagination ],
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            initialSlide: 4,
-            loopedSlides: 1,
-            speed: 800,
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 2.5
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            navigation: {
-                prevEl: ".coach__prev",
-                nextEl: ".coach__next"
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1
+        let mainSlider;
+        let secondarySlider;
+        if (document.querySelector(".swiper")) {
+            mainSlider = new swiper_core_Swiper(".coach__slider", {
+                controller: {
+                    control: secondarySlider
                 },
-                768: {
-                    slidesPerView: 2
+                modules: [ Navigation, Pagination ],
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                initialSlide: 4,
+                loopedSlides: 1,
+                speed: 800,
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2.5
                 },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                }
-            },
-            on: {}
-        });
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".coach__prev",
+                    nextEl: ".coach__next"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                },
+                on: {}
+            });
+            secondarySlider = new swiper_core_Swiper(".block-coaches__slider", {
+                controller: {
+                    control: mainSlider
+                },
+                modules: [ Navigation, Pagination ],
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                initialSlide: 4,
+                loopedSlides: 1,
+                speed: 800,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".block-coaches__prev",
+                    nextEl: ".block-coaches__next"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 30
+                    }
+                },
+                on: {}
+            });
+            mainSlider.on("slideChange", (function() {
+                let activeIndex = mainSlider.activeIndex;
+                secondarySlider.slideTo(activeIndex);
+            }));
+            secondarySlider.on("slideChange", (function() {
+                let activeIndex = secondarySlider.activeIndex;
+                mainSlider.slideTo(activeIndex);
+            }));
+        }
     }
     window.addEventListener("load", (function(e) {
         initSliders();
