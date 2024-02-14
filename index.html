@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240212182015">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240213210650">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +23,11 @@
 							<li class="menu__item-logo">
 								<img src="img/icons/logo.png" alt="" />
 							</li>
-							<li class="menu__item">Головна</li>
-							<li class="menu__item">Зали</li>
-							<li class="menu__item">Тренери</li>
-							<li class="menu__item">Прайс</li>
-							<li class="menu__item">Контакти</li>
+							<li data-goto-header data-goto=".main" class="menu__item">Головна</li>
+							<li data-goto-header data-goto=".rooms" class="menu__item">Зали</li>
+							<li data-goto-header data-goto=".coaches" class="menu__item">Тренери</li>
+							<li data-goto-header data-goto=".list" class="menu__item">Прайс</li>
+							<li data-goto-header data-goto=".callback" class="menu__item">Контакти</li>
 						</ul>
 					</nav>
 					<button type="button" class="menu__icon icon-menu">
@@ -47,7 +47,7 @@
 		</header>
 
 		<main class="page page__home">
-			<section class="main" style="background-image: url('img/mainpage/main/1.png')">
+			<section data-watch-threshold="0.5" data-watch="navigator" class="main" style="background-image: url('img/mainpage/main/1.png')">
 				<div class="main__container">
 					<div class="main__root">
 						<div class="main__body">
@@ -59,7 +59,7 @@
 								<button data-popup="#popup" class="main__btn btn">
 									<span>обрати тренера</span>
 								</button>
-								<button data-popup="#popup" class="main__btn btn">
+								<button class="main__btn btn">
 									<span>зв’язатися з нами</span>
 								</button>
 							</div>
@@ -126,7 +126,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="rooms">
+			<section data-watch-threshold="0.2" data-watch="navigator" class="rooms">
 				<div class="rooms__container">
 					<div class="rooms__title title">Зали</div>
 					<div class="rooms__items">
@@ -281,11 +281,11 @@
 								твій стиль життя, твоя свобода, твоя сила. Вір у себе, обирай спорт, обирай життя!
 							</p>
 						</div>
-						<button class="lesson__btn">записатися на перше заняття</button>
+						<button data-popup="#popup_2" class="lesson__btn">записатися на перше заняття</button>
 					</div>
 				</div>
 			</section>
-			<section class="coaches">
+			<section data-watch-threshold="0.2" data-watch="navigator" class="coaches">
 				<div class="coaches__container">
 					<div class="coaches__title title">Тренери</div>
 					<div class="coach__swiper">
@@ -489,13 +489,13 @@
 					</div>
 				</div>
 			</section>
-			<section class="list">
+			<section data-watch-threshold="0.2" data-watch="navigator" class="list">
 				<div class="list__container">
 					<div class="list__title title">Прайс</div>
 					<div class="list__inner"></div>
 				</div>
 			</section>
-			<section class="callback">
+			<section data-watch-threshold="0.2" data-watch="navigator" class="callback">
 				<div class="callback__container">
 					<div class="callback__inner">
 						<img class="callback__image" src="img/mainpage/callback/1.png" alt="" />
@@ -540,10 +540,10 @@
 					<nav class="footer__navigation">
 						<div class="footer__title">Навігація</div>
 						<ul class="footer__list">
-							<li class="footer__item"><span>Головна</span></li>
-							<li class="footer__item"><span>Зали</span></li>
-							<li class="footer__item"><span>Тренери</span></li>
-							<li class="footer__item"><span>Прайс</span></li>
+							<li data-goto-header data-goto=".main" class="footer__item"><span>Головна</span></li>
+							<li data-goto-header data-goto=".rooms" class="footer__item"><span>Зали</span></li>
+							<li data-goto-header data-goto=".coaches" class="footer__item"><span>Тренери</span></li>
+							<li data-goto-header data-goto=".list" class="footer__item"><span>Прайс</span></li>
 						</ul>
 					</nav>
 					<div class="footer__schedule">
@@ -1048,14 +1048,27 @@
 					<div class="appointment__root">
 						<div class="appointment__title title">ЗАЛИШАЙ свої ДАНІ</div>
 						<div class="appointment__subtitle">і наш менеджер зв’яжеться з вами</div>
-						<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Ім’я та Прізвище" class="appointment__input" />
-						<div class="appointment__body"></div>
+						<form id="form" method="POST" action="files/sendmail/sendmail.php" method="POST" class="requestform">
+							<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Ім’я та Прізвище" class="requestform__input" />
+							<div class="requestform__body">
+								<div class="requestform__number">+380</div>
+								<input autocomplete="off" type="number" name="form[]" data-error="Error" placeholder="Номер телефону" class="input" />
+							</div>
+							<select data-show-selected class="requestform__select" name="form[]" data-class-modif="form"></select>
+							<div class="requestform__item">
+								<div class="requestform__checkbox checkbox">
+									<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req _reqfirst" />
+									<label for="formAgreement" class="checkbox__label">Я погоджуюсь з <span>договором публічної оферти.</span></label>
+								</div>
+							</div>
+							<button class="requestform__btn" type="submit" class="button">Записатися</button>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240212182015"></script>
+	<script src="js/app.min.js?_v=20240213210650"></script>
 </body>
 
 </html>
