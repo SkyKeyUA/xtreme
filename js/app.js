@@ -508,6 +508,7 @@
             let option = document.createElement("option");
             option.setAttribute("value", i);
             option.value = i + 1;
+            if (i === 4) option.setAttribute("selected", "");
             option.textContent = coachesFull[i];
             coachesSelect.appendChild(option);
         }
@@ -4316,8 +4317,14 @@
                 on: {}
             });
             mainSlider.on("slideChange", (function() {
+                let coachesSelect = document.querySelector(".requestform__select");
+                let options = coachesSelect.querySelectorAll("option");
+                options.forEach((function(option) {
+                    option.removeAttribute("selected");
+                }));
                 let activeIndex = mainSlider.activeIndex;
                 secondarySlider.slideTo(activeIndex);
+                options[activeIndex].setAttribute("selected", "");
             }));
             secondarySlider.on("slideChange", (function() {
                 let activeIndex = secondarySlider.activeIndex;

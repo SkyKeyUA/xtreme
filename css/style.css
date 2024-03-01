@@ -5,7 +5,7 @@
 :root {
   --mainColor: #ffffff;
   --whiteCC: #ffffff33;
-  --black: #000000;
+  --black: #000;
   --bgDark: #0f1113;
   --grey: #d9d9d9;
   --greyCC: #d9d9d933;
@@ -1742,6 +1742,41 @@ input[type=number] {
   height: 2px;
   background: -webkit-gradient(linear, left top, right top, from(var(--yellow)), color-stop(var(--mainColor)), to(transparent));
   background: linear-gradient(to right, var(--yellow), var(--mainColor), transparent);
+}
+
+.list__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.2%;
+}
+
+.list__subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--black);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.5%;
+          flex: 0 0 16.5%;
+  background: var(--grey);
+  padding: 25px 0px;
+  border-radius: 6px;
+}
+
+.list__yellow-bg {
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  padding-left: 25px;
+  background: var(--yellow);
 }
 
 .callback {
