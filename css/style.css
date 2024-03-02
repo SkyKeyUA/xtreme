@@ -676,6 +676,10 @@ input[type=number] {
 
 .header__btn {
   white-space: nowrap;
+  z-index: 50;
+}
+
+.header__btn > span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,10 +690,6 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 13px;
-  z-index: 50;
-}
-
-.header__btn span {
   padding: 0.96875rem 1.125rem;
 }
 
@@ -2444,9 +2444,9 @@ input[type=number] {
 
 @media (max-width: 61.99875em) {
   .header__btn {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 
   .menu {
@@ -2487,7 +2487,7 @@ input[type=number] {
   }
 
   .icon-menu {
-    margin-left: 40px;
+    margin-left: 200px;
     display: block;
     position: relative;
     width: 2.8125rem;
@@ -2570,6 +2570,19 @@ input[type=number] {
     font-size: 1.125rem;
   }
 
+  .header__btn > span {
+    padding: 0.625rem;
+  }
+
+  .header__btn > span span {
+    display: none;
+  }
+
+  .header__btn > span svg {
+    width: 24px;
+    height: 24px;
+  }
+
   .icon-menu {
     margin-left: 0px;
   }
@@ -2610,22 +2623,9 @@ input[type=number] {
     gap: 0.625rem;
   }
 
-  .header__logo img {
-    max-width: 60px;
-  }
-
   .header__btn {
     gap: 6px;
     font-size: 0.875rem;
-  }
-
-  .header__btn span {
-    padding: 0.5rem 0.75rem;
-  }
-
-  .icon-menu {
-    width: 1.875rem;
-    height: 1.125rem;
   }
 
   .main__root {
