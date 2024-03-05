@@ -1356,15 +1356,6 @@ input[type=number] {
   margin-top: 137px;
   padding-bottom: 125px;
   position: relative;
-  background-repeat: no-repeat;
-  background-size: auto auto, cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  min-height: 660px;
 }
 
 .lesson__container::after {
@@ -1380,6 +1371,19 @@ input[type=number] {
 }
 
 .lesson__root {
+  min-height: 660px;
+  background-repeat: no-repeat;
+  background-size: auto auto, cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  position: relative;
+}
+
+.lesson__inner {
   max-width: 756px;
   background: var(--lightDarkBg);
 }
