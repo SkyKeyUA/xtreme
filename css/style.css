@@ -1206,7 +1206,7 @@ input[type=number] {
 }
 
 .rooms__container {
-  margin-top: 51px;
+  margin-top: 50px;
   position: relative;
   padding-bottom: 122px;
 }
@@ -1371,7 +1371,6 @@ input[type=number] {
 }
 
 .lesson__root {
-  min-height: 660px;
   background-repeat: no-repeat;
   background-size: auto auto, cover;
   display: -webkit-box;
@@ -2322,6 +2321,10 @@ input[type=number] {
     margin-left: 85px;
     max-width: 643px;
   }
+
+  .lesson__root {
+    min-height: 660px;
+  }
 }
 
 @media (min-width: 61.99875em) {
@@ -2622,6 +2625,10 @@ input[type=number] {
   .choose__title {
     font-size: 4rem;
   }
+
+  .lesson__title {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -2724,6 +2731,15 @@ input[type=number] {
     grid-template-columns: repeat(1, 1fr);
     margin: 60px auto 0px;
   }
+
+  .lesson__root {
+    background-position: 0% 0%;
+    background-size: 100% auto;
+  }
+
+  .lesson__title {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 29.99875em) {
@@ -2776,12 +2792,33 @@ input[type=number] {
     font-size: 1.25rem;
   }
 
+  .rooms__container {
+    padding-bottom: 60px;
+  }
+
   .rooms__title {
     font-size: 2rem;
   }
 
   .room__body {
     font-size: 18px;
+  }
+
+  .lesson__container {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .lesson__root {
+    background-image: none !important;
+  }
+
+  .lesson__title {
+    font-size: 2rem;
+  }
+
+  .lesson__text {
+    font-size: 1.25rem;
   }
 }
 
