@@ -2513,6 +2513,10 @@ input[type=number] {
 }
 
 @media (max-width: 61.99875em) {
+  .title {
+    font-size: 4rem !important;
+  }
+
   .header__btn {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -2617,23 +2621,15 @@ input[type=number] {
     max-width: 850px;
     padding-top: 160px;
   }
-
-  .main__title {
-    font-size: 4rem;
-  }
-
-  .choose__title {
-    font-size: 4rem;
-  }
-
-  .lesson__title {
-    font-size: 4rem;
-  }
 }
 
 @media (max-width: 47.99875em) {
   .block-coaches__btn {
     font-size: 1.125rem;
+  }
+
+  .title {
+    font-size: 3rem !important;
   }
 
   .header {
@@ -2682,10 +2678,6 @@ input[type=number] {
     width: 50%;
   }
 
-  .main__title {
-    font-size: 3rem;
-  }
-
   .main__inner {
     gap: 30px;
   }
@@ -2708,10 +2700,6 @@ input[type=number] {
     padding: 0px;
   }
 
-  .choose__title {
-    font-size: 3rem;
-  }
-
   .choose__subtitle {
     padding-left: 50px;
   }
@@ -2720,10 +2708,6 @@ input[type=number] {
     width: 40px;
     height: 40px;
     left: 0px;
-  }
-
-  .rooms__title {
-    font-size: 3rem;
   }
 
   .rooms__items {
@@ -2736,16 +2720,16 @@ input[type=number] {
     background-position: 0% 0%;
     background-size: 100% auto;
   }
-
-  .lesson__title {
-    font-size: 3rem;
-  }
 }
 
 @media (max-width: 29.99875em) {
   .block-coaches__btn {
     padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
+  }
+
+  .title {
+    font-size: 2rem !important;
   }
 
   .header__container {
@@ -2765,10 +2749,6 @@ input[type=number] {
     width: 35%;
   }
 
-  .main__title {
-    font-size: 2rem;
-  }
-
   .main__price {
     font-size: 1.25rem;
   }
@@ -2784,20 +2764,12 @@ input[type=number] {
     background-image: none !important;
   }
 
-  .choose__title {
-    font-size: 2rem;
-  }
-
   .choose__text {
     font-size: 1.25rem;
   }
 
   .rooms__container {
     padding-bottom: 60px;
-  }
-
-  .rooms__title {
-    font-size: 2rem;
   }
 
   .room__body {
@@ -2811,10 +2783,6 @@ input[type=number] {
 
   .lesson__root {
     background-image: none !important;
-  }
-
-  .lesson__title {
-    font-size: 2rem;
   }
 
   .lesson__text {
