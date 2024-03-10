@@ -4254,19 +4254,12 @@
                     control: secondarySlider
                 },
                 modules: [ Navigation, Pagination ],
-                effect: "coverflow",
                 grabCursor: true,
                 centeredSlides: true,
                 slidesPerView: "auto",
                 initialSlide: 4,
                 loopedSlides: 1,
                 speed: 800,
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 2.5
-                },
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
@@ -4277,10 +4270,19 @@
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 1
+                        slidesPerView: 1,
+                        spaceBetween: 30
                     },
                     768: {
-                        slidesPerView: 2
+                        slidesPerView: 2,
+                        spaceBetween: 100,
+                        effect: "coverflow",
+                        coverflowEffect: {
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 2.5
+                        }
                     },
                     992: {
                         slidesPerView: 3,
