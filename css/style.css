@@ -1809,11 +1809,17 @@ input[type=number] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list__subtitle span {
   display: block;
-  max-width: 280px;
+  width: 280px;
   background: var(--grey);
   padding: 25px 5px;
   border-radius: 6px;
@@ -1888,6 +1894,16 @@ input[type=number] {
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .list__count:not(:last-child),
@@ -1927,7 +1943,7 @@ input[type=number] {
 }
 
 .callback__info {
-  margin: 94px 0px;
+  margin: 94px 54px;
   max-width: 970px;
   position: relative;
 }
@@ -1935,13 +1951,20 @@ input[type=number] {
 .callback__title {
   font-size: 64px;
   margin-bottom: 13px;
-  margin-right: 101px;
 }
 
 .callback__text {
   font-size: 32px;
   margin-bottom: 81px;
-  margin-right: 126px;
+}
+
+.callback__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .callback__input {
@@ -1952,8 +1975,10 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
   padding: 13px 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: var(--whiteCC);
-  margin-right: 54px;
 }
 
 .callback__input input {
@@ -1983,6 +2008,12 @@ input[type=number] {
 
 .callback__input input::placeholder {
   color: rgba(255, 255, 255, 0.2);
+}
+
+.callback__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .callback__number {
@@ -2569,6 +2600,46 @@ input[type=number] {
   .coach__swiper .swiper-pagination {
     margin-top: 102px;
   }
+
+  .list__inner {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .list__row {
+    position: relative;
+  }
+
+  .list__subtitle {
+    font-size: 24px;
+  }
+
+  .list__first-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 380px;
+            flex: 0 0 380px;
+    position: sticky;
+    left: 0;
+    background: var(--bgDark);
+  }
+
+  .list__group span {
+    font-size: 24px;
+    max-width: 370px;
+  }
+
+  .list__yellow-bg {
+    position: sticky;
+  }
+
+  .list__line::before,
+  .list__line::after {
+    width: 1580px;
+  }
+
+  .callback__info {
+    margin: 94px 20px;
+  }
 }
 
 @media (max-width: 71.87375em) {
@@ -2736,6 +2807,82 @@ input[type=number] {
   .coach__swiper .swiper-pagination {
     margin-top: 60px;
   }
+
+  .list__inner {
+    font-size: 16px;
+  }
+
+  .list__empty {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
+  }
+
+  .list__subtitle {
+    font-size: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
+  }
+
+  .list__subtitle span {
+    width: 200px;
+  }
+
+  .list__first-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 340px;
+            flex: 0 0 340px;
+  }
+
+  .list__group span {
+    font-size: 20px;
+    max-width: 330px;
+  }
+
+  .list__line::before,
+  .list__line::after {
+    width: 1220px;
+  }
+
+  .list__price {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
+  }
+
+  .callback {
+    margin: 300px 0px 125px;
+  }
+
+  .callback__title {
+    font-size: 48px !important;
+  }
+
+  .callback__text {
+    font-size: 28px;
+  }
+
+  .callback__input {
+    padding: 6px 9px;
+  }
+
+  .callback__input input {
+    font-size: 32px;
+    margin: 0px 32px;
+    width: 200px;
+    padding: 6.5px 7.5px;
+  }
+
+  .callback__number {
+    padding: 12px 19px 12px 15px;
+    font-size: 32px;
+  }
+
+  .callback__btn {
+    padding: 14px 22px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -2846,7 +2993,11 @@ input[type=number] {
   }
 
   .coach__block {
-    max-width: 100%;
+    max-width: 500px;
+  }
+
+  .coach__block::before {
+    left: 2px;
   }
 
   .coach__slider {
@@ -2880,6 +3031,101 @@ input[type=number] {
 
   .list {
     margin-top: 60px;
+  }
+
+  .list__inner {
+    font-size: 14px;
+  }
+
+  .list__empty {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
+  }
+
+  .list__subtitle {
+    font-size: 16px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
+  }
+
+  .list__subtitle span {
+    width: 180px;
+  }
+
+  .list__first-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
+  }
+
+  .list__group span {
+    font-size: 16px;
+    max-width: 210px;
+    padding: 25px 10px;
+  }
+
+  .list__yellow-bg {
+    padding: 25px 10px;
+  }
+
+  .list__line::before,
+  .list__line::after {
+    width: 1020px;
+  }
+
+  .list__info {
+    padding: 25px 10px;
+  }
+
+  .list__price {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
+  }
+
+  .callback {
+    margin: 260px 0px 125px;
+  }
+
+  .callback__image {
+    width: 420px;
+    height: auto;
+    left: 15px;
+  }
+
+  .callback__info {
+    margin: 60px 20px;
+  }
+
+  .callback__title {
+    font-size: 32px !important;
+  }
+
+  .callback__text {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .callback__input {
+    padding: 4px 7px;
+  }
+
+  .callback__input input {
+    font-size: 20px;
+    margin: 0px 8px;
+    width: 120px;
+  }
+
+  .callback__number {
+    font-size: 20px;
+    padding: 7px 12px 7px 9px;
+  }
+
+  .callback__btn {
+    padding: 10px 16px;
+    font-size: 14px;
   }
 }
 
@@ -2944,6 +3190,52 @@ input[type=number] {
   .coach__block::before,
   .coach__block::after {
     display: none;
+  }
+
+  .list__first-column {
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
+  }
+
+  .list__group span {
+    max-width: 140px;
+  }
+
+  .list__yellow-bg {
+    position: relative;
+  }
+
+  .list__line::before,
+  .list__line::after {
+    width: 950px;
+  }
+
+  .callback {
+    margin: 60px 0px;
+  }
+
+  .callback__image {
+    display: none;
+  }
+
+  .callback__info {
+    margin: 20px;
+  }
+
+  .callback__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .callback__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 }
 
