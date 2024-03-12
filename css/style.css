@@ -777,12 +777,6 @@ input[type=number] {
 
 .footer__container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 105px;
   padding-bottom: 81px;
 }
@@ -2360,6 +2354,15 @@ input[type=number] {
             animation-play-state: running;
   }
 
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
   .choose__root::after {
     left: 651px;
   }
@@ -2655,6 +2658,36 @@ input[type=number] {
     font-size: 1.25rem;
   }
 
+  .footer__info {
+    gap: 30px;
+  }
+
+  .footer__title {
+    font-size: 20px;
+  }
+
+  .footer__list {
+    font-size: 16px;
+  }
+
+  .footer__time {
+    font-size: 16px;
+  }
+
+  .footer__address {
+    font-size: 16px;
+    max-width: 230px;
+    margin-bottom: 24px;
+  }
+
+  .footer__call {
+    font-size: 16px;
+  }
+
+  .footer__email {
+    font-size: 16px;
+  }
+
   .main {
     background-position: 0% 0%;
     background-size: 100% auto;
@@ -2769,6 +2802,14 @@ input[type=number] {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
+  }
+
+  .footer__logo img {
+    width: 140px;
+  }
+
+  .footer__icons {
+    gap: 14px;
   }
 
   .main__container {
@@ -2921,6 +2962,24 @@ input[type=number] {
 
   .icon-menu {
     margin-left: 0px;
+  }
+
+  .footer__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer__inner {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .footer__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .main {
@@ -3146,6 +3205,10 @@ input[type=number] {
   .header__btn {
     gap: 6px;
     font-size: 0.875rem;
+  }
+
+  .footer__copyright a {
+    font-size: 16px;
   }
 
   .main__root {
