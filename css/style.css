@@ -2644,7 +2644,6 @@ input[type=number] {
             flex: 0 0 380px;
     position: sticky;
     left: 0;
-    background: var(--bgDark);
   }
 
   .list__group span {
