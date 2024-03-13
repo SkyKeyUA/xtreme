@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240311213716">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240312204310">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -640,7 +640,9 @@
 			<section data-watch-threshold="0.2" data-watch="navigator" class="callback">
 				<div class="callback__container">
 					<div class="callback__inner">
-						<img class="callback__image" src="img/mainpage/callback/1.png" alt="" />
+						<div class="callback__image">
+							<img src="img/mainpage/callback/1.png" alt="" />
+						</div>
 						<div class="callback__info">
 							<div class="callback__title title">Залишилися запитання?</div>
 							<div class="callback__text">залишай номер та наш менеджер зв’яжеться з тобою!</div>
@@ -725,456 +727,458 @@
 		<div class="popup__wrapper">
 			<button data-close type="button" class="popup__close"></button>
 			<div class="popup__content">
-				<div class="block-coaches">
-					<button type="button" class="block-coaches__prev block-coaches__arrow">
-						<svg width="33" height="65" viewBox="0 0 33 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M27.8382 64.3639C28.9036 64.3659 29.9361 63.9983 30.7565 63.3246C31.2182 62.9453 31.5999 62.4795 31.8796 61.9538C32.1594 61.428 32.3317 60.8528 32.3868 60.261C32.4419 59.6692 32.3786 59.0724 32.2005 58.5049C32.0225 57.9374 31.7332 57.4102 31.3493 56.9536L10.921 32.7348L30.6197 8.4708C30.9984 8.00862 31.2813 7.47681 31.452 6.90595C31.6227 6.3351 31.6778 5.73644 31.6143 5.1444C31.5507 4.55236 31.3697 3.9786 31.0816 3.4561C30.7936 2.9336 30.4041 2.47267 29.9357 2.0998C29.4639 1.68845 28.9114 1.37818 28.3129 1.18846C27.7143 0.998734 27.0827 0.933652 26.4575 0.997293C25.8324 1.06094 25.2273 1.25193 24.6802 1.55829C24.1331 1.86465 23.6558 2.27975 23.2783 2.77756L1.25409 29.8882C0.58342 30.6967 0.216778 31.7108 0.216778 32.7574C0.216778 33.804 0.58342 34.8181 1.25409 35.6266L24.0535 62.7372C24.5109 63.284 25.092 63.7163 25.7496 63.9989C26.4071 64.2815 27.1227 64.4066 27.8382 64.3639Z" fill="#EFE611" />
-						</svg>
-					</button>
-					<button type="button" class="block-coaches__next block-coaches__arrow">
-						<svg width="33" height="65" viewBox="0 0 33 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M27.8382 64.3639C28.9036 64.3659 29.9361 63.9983 30.7565 63.3246C31.2182 62.9453 31.5999 62.4795 31.8796 61.9538C32.1594 61.428 32.3317 60.8528 32.3868 60.261C32.4419 59.6692 32.3786 59.0724 32.2005 58.5049C32.0225 57.9374 31.7332 57.4102 31.3493 56.9536L10.921 32.7348L30.6197 8.4708C30.9984 8.00862 31.2813 7.47681 31.452 6.90595C31.6227 6.3351 31.6778 5.73644 31.6143 5.1444C31.5507 4.55236 31.3697 3.9786 31.0816 3.4561C30.7936 2.9336 30.4041 2.47267 29.9357 2.0998C29.4639 1.68845 28.9114 1.37818 28.3129 1.18846C27.7143 0.998734 27.0827 0.933652 26.4575 0.997293C25.8324 1.06094 25.2273 1.25193 24.6802 1.55829C24.1331 1.86465 23.6558 2.27975 23.2783 2.77756L1.25409 29.8882C0.58342 30.6967 0.216778 31.7108 0.216778 32.7574C0.216778 33.804 0.58342 34.8181 1.25409 35.6266L24.0535 62.7372C24.5109 63.284 25.092 63.7163 25.7496 63.9989C26.4071 64.2815 27.1227 64.4066 27.8382 64.3639Z" fill="#EFE611" />
-						</svg>
-					</button>
-					<div class="block-coaches__slider swiper">
-						<div class="block-coaches__wrapper swiper-wrapper">
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/3.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
+				<div class="coaches__root">
+					<div class="block-coaches">
+						<button type="button" class="block-coaches__prev block-coaches__arrow">
+							<svg width="33" height="65" viewBox="0 0 33 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M27.8382 64.3639C28.9036 64.3659 29.9361 63.9983 30.7565 63.3246C31.2182 62.9453 31.5999 62.4795 31.8796 61.9538C32.1594 61.428 32.3317 60.8528 32.3868 60.261C32.4419 59.6692 32.3786 59.0724 32.2005 58.5049C32.0225 57.9374 31.7332 57.4102 31.3493 56.9536L10.921 32.7348L30.6197 8.4708C30.9984 8.00862 31.2813 7.47681 31.452 6.90595C31.6227 6.3351 31.6778 5.73644 31.6143 5.1444C31.5507 4.55236 31.3697 3.9786 31.0816 3.4561C30.7936 2.9336 30.4041 2.47267 29.9357 2.0998C29.4639 1.68845 28.9114 1.37818 28.3129 1.18846C27.7143 0.998734 27.0827 0.933652 26.4575 0.997293C25.8324 1.06094 25.2273 1.25193 24.6802 1.55829C24.1331 1.86465 23.6558 2.27975 23.2783 2.77756L1.25409 29.8882C0.58342 30.6967 0.216778 31.7108 0.216778 32.7574C0.216778 33.804 0.58342 34.8181 1.25409 35.6266L24.0535 62.7372C24.5109 63.284 25.092 63.7163 25.7496 63.9989C26.4071 64.2815 27.1227 64.4066 27.8382 64.3639Z" fill="#EFE611" />
+							</svg>
+						</button>
+						<button type="button" class="block-coaches__next block-coaches__arrow">
+							<svg width="33" height="65" viewBox="0 0 33 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M27.8382 64.3639C28.9036 64.3659 29.9361 63.9983 30.7565 63.3246C31.2182 62.9453 31.5999 62.4795 31.8796 61.9538C32.1594 61.428 32.3317 60.8528 32.3868 60.261C32.4419 59.6692 32.3786 59.0724 32.2005 58.5049C32.0225 57.9374 31.7332 57.4102 31.3493 56.9536L10.921 32.7348L30.6197 8.4708C30.9984 8.00862 31.2813 7.47681 31.452 6.90595C31.6227 6.3351 31.6778 5.73644 31.6143 5.1444C31.5507 4.55236 31.3697 3.9786 31.0816 3.4561C30.7936 2.9336 30.4041 2.47267 29.9357 2.0998C29.4639 1.68845 28.9114 1.37818 28.3129 1.18846C27.7143 0.998734 27.0827 0.933652 26.4575 0.997293C25.8324 1.06094 25.2273 1.25193 24.6802 1.55829C24.1331 1.86465 23.6558 2.27975 23.2783 2.77756L1.25409 29.8882C0.58342 30.6967 0.216778 31.7108 0.216778 32.7574C0.216778 33.804 0.58342 34.8181 1.25409 35.6266L24.0535 62.7372C24.5109 63.284 25.092 63.7163 25.7496 63.9989C26.4071 64.2815 27.1227 64.4066 27.8382 64.3639Z" fill="#EFE611" />
+							</svg>
+						</button>
+						<div class="block-coaches__slider swiper">
+							<div class="block-coaches__wrapper swiper-wrapper">
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/3.jpg" alt="" />
 										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
 												</div>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/1.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
-										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/2.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/1.jpg" alt="" />
 										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
 												</div>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/3.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
-										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/1.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/2.jpg" alt="" />
 										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
 												</div>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/2.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
-										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/3.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/3.jpg" alt="" />
 										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
 												</div>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/1.jpg" alt="" />
-									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
-										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
-											</div>
-										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="block-coaches__slide swiper-slide">
-								<div class="block-coaches__root">
-									<div class="block-coaches__image">
-										<img src="img/mainpage/coach/2.jpg" alt="" />
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/1.jpg" alt="" />
+										</div>
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
+												</div>
+											</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
+											</div>
+										</div>
 									</div>
-									<div class="block-coaches__inner">
-										<div class="block-coaches__top">
-											<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
-											<div class="block-coaches__position">Старший тренер</div>
+								</div>
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/2.jpg" alt="" />
 										</div>
-										<div class="block-coaches__center">
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Направлення:</div>
-												<div class="block-coaches__text">
-													Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
 												</div>
 											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Освіта:</div>
-												<div class="block-coaches__text">
-													Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
-													університет імені Бориса Грінченка
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Сертифікати:</div>
-												<div class="block-coaches__text">
-													Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
-													професійності та якості у фітнес-індустрії
-												</div>
-											</div>
-											<div class="block-coaches__body">
-												<div class="block-coaches__subtitle">Кредо:</div>
-												<div class="block-coaches__text">
-													Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
-												</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
 											</div>
 										</div>
-										<div class="block-coaches__bottom">
-											<button class="block-coaches__btn btn">
-												<span>сторінка в інстаграм</span>
-											</button>
-											<button data-popup="#popup_2" class="block-coaches__btn-classic">
-												Записатися
-											</button>
+									</div>
+								</div>
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/3.jpg" alt="" />
+										</div>
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
+												</div>
+											</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/1.jpg" alt="" />
+										</div>
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
+												</div>
+											</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block-coaches__slide swiper-slide">
+									<div class="block-coaches__root">
+										<div class="block-coaches__image">
+											<img src="img/mainpage/coach/2.jpg" alt="" />
+										</div>
+										<div class="block-coaches__inner">
+											<div class="block-coaches__top">
+												<div class="block-coaches__title title">Леонтюк <span>Анна</span></div>
+												<div class="block-coaches__position">Старший тренер</div>
+											</div>
+											<div class="block-coaches__center">
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Направлення:</div>
+													<div class="block-coaches__text">
+														Фітнес, фітнес інтенсив, персональні тренування, тренування в міні групах
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Освіта:</div>
+													<div class="block-coaches__text">
+														Має вищу освіту в галузі фізичної підготовки та спорту. Завершила Київський
+														університет імені Бориса Грінченка
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Сертифікати:</div>
+													<div class="block-coaches__text">
+														Сертифікована фахівець з фітнесу, що відповідає найвищим стандартам
+														професійності та якості у фітнес-індустрії
+													</div>
+												</div>
+												<div class="block-coaches__body">
+													<div class="block-coaches__subtitle">Кредо:</div>
+													<div class="block-coaches__text">
+														Здоров'я - це інвестиція в майбутнє. Інвестуйте у себе
+													</div>
+												</div>
+											</div>
+											<div class="block-coaches__bottom">
+												<button class="block-coaches__btn btn">
+													<span>сторінка в інстаграм</span>
+												</button>
+												<button data-popup="#popup_2" class="block-coaches__btn-classic">
+													Записатися
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1214,7 +1218,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240311213716"></script>
+	<script src="js/app.min.js?_v=20240312204310"></script>
 </body>
 
 </html>
