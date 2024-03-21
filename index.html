@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240318162609">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240321113234">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1190,13 +1190,13 @@
 		</div>
 	</div>
 
-	<div id="popup_2" aria-hidden="true" class="popup">
+	<div id="popup_2" aria-hidden="true" class="popup appointment__popup">
 		<div class="popup__wrapper">
-			<button data-close type="button" class="popup__close"></button>
+			<button data-close type="button" class="popup__close appointment__close"></button>
 			<div class="popup__content">
 				<div class="appointment">
 					<div class="appointment__root">
-						<div class="appointment__title title">ЗАЛИШАЙ свої ДАНІ</div>
+						<div class="appointment__title">ЗАЛИШАЙ свої ДАНІ</div>
 						<div class="appointment__subtitle">і наш менеджер зв’яжеться з вами</div>
 						<form id="form" method="POST" action="files/sendmail/sendmail.php" method="POST" class="requestform">
 							<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Ім’я та Прізвище" class="requestform__input" />
@@ -1208,7 +1208,8 @@
 							<div class="requestform__item">
 								<div class="requestform__checkbox checkbox">
 									<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req _reqfirst" />
-									<label for="formAgreement" class="checkbox__label">Я погоджуюсь з <span>договором публічної оферти.</span></label>
+									<label for="formAgreement" class="checkbox__label"><span class="requestform__law">Я погоджуюсь з
+											<span class="requestform__public">договором публічної оферти.</span></span></label>
 								</div>
 							</div>
 							<button class="requestform__btn" type="submit" class="button">Записатися</button>
@@ -1218,7 +1219,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240318162609"></script>
+	<script src="js/app.min.js?_v=20240321113234"></script>
 </body>
 
 </html>

@@ -291,6 +291,10 @@ body::after {
   margin: 0 auto;
 }
 
+.block-coaches__close {
+  right: 10px;
+}
+
 .block-coaches__slide {
   border: 3px solid var(--yellow);
   border-radius: 35px;
@@ -591,11 +595,6 @@ body::after {
   position: relative;
   cursor: pointer;
   margin-bottom: 45px;
-}
-
-.checkbox__label span {
-  color: var(--yellow);
-  display: contents;
 }
 
 .checkbox__label::before {
@@ -2062,6 +2061,11 @@ input[type=number] {
   font-size: 54px;
   margin-bottom: 10px;
   text-align: center;
+  color: var(--yellow);
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .appointment__subtitle {
@@ -2258,9 +2262,9 @@ input[type=number] {
 }
 
 .requestform ._select-open .select__title::before {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -webkit-transform: translate(0px, -50%) rotate(-180deg);
+      -ms-transform: translate(0px, -50%) rotate(-180deg);
+          transform: translate(0px, -50%) rotate(-180deg);
 }
 
 .requestform__btn {
@@ -2268,12 +2272,17 @@ input[type=number] {
   width: 100%;
   font-weight: 700;
   font-size: 26px;
+  border-radius: 6px;
   text-transform: uppercase;
   color: var(--black);
   background: -webkit-gradient(linear, left top, left bottom, from(#efe611), to(#efb111));
   background: linear-gradient(180deg, #efe611 0%, #efb111 100%);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.requestform__public {
+  color: var(--yellow);
 }
 
 .swiper {
@@ -2358,6 +2367,10 @@ input[type=number] {
 
   .callback__input {
     background: var(--whiteCC);
+  }
+
+  .requestform__public {
+    display: contents;
   }
 }
 
@@ -3094,11 +3107,20 @@ input[type=number] {
     padding: 14px 22px;
     font-size: 20px;
   }
+
+  .appointment__close {
+    right: 0px;
+    top: 0px;
+  }
 }
 
 @media (max-width: 47.99875em) {
+  .block-coaches__slider {
+    max-width: 420px;
+  }
+
   .block-coaches__close {
-    right: 40px;
+    right: calc(50% - 185px);
     background-color: var(--lightDarkBg);
   }
 
@@ -3129,6 +3151,10 @@ input[type=number] {
 
   .title {
     font-size: 3rem !important;
+  }
+
+  .checkbox__label {
+    font-size: 16px;
   }
 
   .header {
@@ -3256,7 +3282,7 @@ input[type=number] {
   }
 
   .coach__slider {
-    max-width: 429px;
+    max-width: 390px;
   }
 
   .coach__slide {
@@ -3406,11 +3432,65 @@ input[type=number] {
     padding: 13px 16px;
     font-size: 16px;
   }
+
+  .appointment__root {
+    width: 454px;
+    padding: 20px;
+  }
+
+  .appointment__title {
+    font-size: 32px;
+  }
+
+  .appointment__subtitle {
+    font-size: 20px;
+  }
+
+  .requestform__input {
+    font-size: 20px;
+  }
+
+  .requestform__body {
+    font-size: 20px;
+  }
+
+  .requestform__body input {
+    margin: 0px 9px 0px 3px;
+  }
+
+  .requestform__number {
+    padding: 18px 12px 18px 6px;
+  }
+
+  .requestform .select__body {
+    font-size: 20px;
+  }
+
+  .requestform .select__title {
+    padding: 18px 6px 12px 75px;
+  }
+
+  .requestform .select__title::before {
+    left: 20px;
+  }
+
+  .requestform .select__title::after {
+    left: 60px;
+  }
+
+  .requestform .select__option {
+    margin-left: 20px;
+    padding: 0px 6px 0px 55px;
+  }
 }
 
 @media (max-width: 29.99875em) {
   .block-coaches {
     padding: 0px;
+  }
+
+  .block-coaches__slider {
+    max-width: 100%;
   }
 
   .block-coaches__close {
@@ -3474,6 +3554,10 @@ input[type=number] {
 
   .title {
     font-size: 2rem !important;
+  }
+
+  .checkbox__label {
+    margin-bottom: 20px;
   }
 
   .header__container {
@@ -3598,6 +3682,32 @@ input[type=number] {
 
   .callback__btn {
     width: 100%;
+  }
+
+  .appointment__popup {
+    padding: 30px 0px;
+  }
+
+  .appointment__root {
+    width: 100%;
+  }
+
+  .appointment__title {
+    font-size: 24px;
+  }
+
+  .requestform__btn {
+    font-size: 24px;
+  }
+
+  .requestform__law {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
