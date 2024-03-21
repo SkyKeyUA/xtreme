@@ -291,11 +291,8 @@ body::after {
   margin: 0 auto;
 }
 
-.block-coaches__close {
-  right: 10px;
-}
-
 .block-coaches__slide {
+  position: relative;
   border: 3px solid var(--yellow);
   border-radius: 35px;
   padding: 60px 20px;
@@ -2061,9 +2058,9 @@ input[type=number] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .list__count:not(:last-child),
@@ -2755,7 +2752,7 @@ input[type=number] {
   }
 
   .block-coaches__slide {
-    padding: 40px 20px;
+    padding: 60px 20px 40px;
   }
 
   .block-coaches__root {
@@ -3309,21 +3306,11 @@ input[type=number] {
     padding: 14px 22px;
     font-size: 20px;
   }
-
-  .appointment__close {
-    right: 0px;
-    top: 0px;
-  }
 }
 
 @media (max-width: 47.99875em) {
   .block-coaches__slider {
     max-width: 420px;
-  }
-
-  .block-coaches__close {
-    right: calc(50% - 185px);
-    background-color: var(--lightDarkBg);
   }
 
   .block-coaches__slide {
@@ -3654,7 +3641,7 @@ input[type=number] {
 
   .appointment__root {
     width: 454px;
-    padding: 20px;
+    padding: 55px 20px 20px;
   }
 
   .appointment__title {
@@ -3710,10 +3697,6 @@ input[type=number] {
 
   .block-coaches__slider {
     max-width: 100%;
-  }
-
-  .block-coaches__close {
-    right: 10px;
   }
 
   .block-coaches__slide {
