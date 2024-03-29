@@ -2030,8 +2030,8 @@ input[type=number] {
 .list__line::after {
   content: "";
   position: absolute;
-  left: 0;
-  width: 1695px;
+  left: 490px;
+  width: 1205px;
   height: 2px;
   background: -webkit-gradient(linear, left top, right top, from(var(--mainColor)), color-stop(var(--mainColor)), to(transparent));
   background: linear-gradient(to right, var(--mainColor), var(--mainColor), transparent);
@@ -2045,12 +2045,15 @@ input[type=number] {
   bottom: 0;
 }
 
-.list__info {
+.list__first-line {
+  padding: 5px 25px 25px;
+}
+
+.list__last-line {
   padding: 25px;
 }
 
 .list__price {
-  padding: 25px 13px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
@@ -2159,6 +2162,13 @@ input[type=number] {
 
 .callback__input input::placeholder {
   color: rgba(255, 255, 255, 0.2);
+}
+
+.callback__input input:focus {
+  outline: none;
+  border-color: initial;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .callback__part {
@@ -2978,7 +2988,8 @@ input[type=number] {
 
   .list__line::before,
   .list__line::after {
-    width: 1580px;
+    left: 380px;
+    width: 1200px;
   }
 
   .callback__info {
@@ -3298,7 +3309,8 @@ input[type=number] {
 
   .list__line::before,
   .list__line::after {
-    width: 1220px;
+    left: 340px;
+    width: 880px;
   }
 
   .list__price {
@@ -3590,10 +3602,15 @@ input[type=number] {
 
   .list__line::before,
   .list__line::after {
-    width: 1020px;
+    left: 220px;
+    width: 800px;
   }
 
-  .list__info {
+  .list__first-line {
+    padding: 5px 10px 25px;
+  }
+
+  .list__last-line {
     padding: 25px 10px;
   }
 
@@ -3892,7 +3909,7 @@ input[type=number] {
 
   .list__line::before,
   .list__line::after {
-    width: 950px;
+    left: 150px;
   }
 
   .callback {
