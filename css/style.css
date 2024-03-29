@@ -1286,14 +1286,15 @@ input[type=number] {
 }
 
 .main__btn span {
+  text-transform: uppercase;
   padding: 1rem 1.4375rem;
 }
 
 .main__btn::before {
-  top: -145%;
+  top: -170%;
   left: -3%;
   width: 106%;
-  height: 405%;
+  height: 461%;
 }
 
 .choose__container {
@@ -3821,11 +3822,17 @@ input[type=number] {
             flex-direction: column;
   }
 
+  .main__btn span {
+    text-transform: uppercase;
+    padding: 1rem 1.25rem;
+  }
+
   .choose__container {
     padding-bottom: 60px;
   }
 
   .choose__root {
+    margin: 2.5rem 0rem 0rem 0rem;
     background-image: none !important;
   }
 
