@@ -1555,6 +1555,7 @@ input[type=number] {
 .lesson__inner {
   max-width: 756px;
   background: var(--lightDarkBg);
+  padding: 0px 20px;
 }
 
 .lesson__title {
