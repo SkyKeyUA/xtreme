@@ -1330,7 +1330,6 @@ input[type=number] {
 .choose__inner {
   position: relative;
   max-width: 856px;
-  padding: 0 20px;
 }
 
 .choose__title {
@@ -1553,9 +1552,8 @@ input[type=number] {
 }
 
 .lesson__inner {
-  max-width: 756px;
+  max-width: 796px;
   background: var(--lightDarkBg);
-  padding: 0px 20px;
 }
 
 .lesson__title {
@@ -2600,6 +2598,10 @@ input[type=number] {
     left: 651px;
   }
 
+  .choose__inner {
+    padding: 0 20px;
+  }
+
   .choose__body {
     margin-left: 85px;
     max-width: 643px;
@@ -2607,6 +2609,10 @@ input[type=number] {
 
   .lesson__root {
     min-height: 660px;
+  }
+
+  .lesson__inner {
+    padding: 0 20px;
   }
 
   .callback__inner {
@@ -3487,10 +3493,6 @@ input[type=number] {
 
   .choose__root::after {
     right: -38px;
-  }
-
-  .choose__inner {
-    padding: 0px;
   }
 
   .choose__subtitle {
